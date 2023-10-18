@@ -4,9 +4,9 @@ const App = () => {
   const [name, setName] = useState([]);
 
   useEffect(() => {
-    fetch("https://starter-name-generator-client-ephm.onrender.com") // Change this URL to the one that you just deployed
+    fetch("https://enigmatic-shore-92552.herokuapp.com/generate")
       .then((res) => res.json())
-      .then((name) => setName([name]));
+      .then((nme) => setName([nme]));
   }, []);
 
   return <h1>{name}</h1>;
